@@ -21,7 +21,11 @@ output :
 [ '1', '2' ]
  */
 
-const x = [];
-x.push(`1`)
-x.push(`2`)
-console.log(x);
+const codes = [1,2,3,4,5];
+function appendCode(users){
+users.forEach(user => {
+    return codes.push(user.code)
+})
+}
+appendCode([{code:10}])
+console.log(codes)
