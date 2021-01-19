@@ -3,4 +3,4 @@ const symbol = Symbol()
 const obj = {
     [symbol]:'Hello world'
 }
-console.log(obj)
+console.log(Object.getOwnPropertySymbols(obj))
